@@ -1,0 +1,146 @@
+{% include "header.html" %}
+
+<header class='property'>
+    <div class="overlay">
+        <!-- Navigation -->
+        <nav class="navbar transparent navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="navbar-brand" href="/">Vancouver Real Estate Analysis And Prediction</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="/property">Property</a>
+<!--                    <a href="/rental">Rental</a>-->
+                    <a href="/peek">Trend</a>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+</header>
+<br>
+<div class="container">
+    <div class="wrapper">
+        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+            <li><a data-toggle="tab" href="#tab1" class="active">Property Trend</a></li>
+            <li><a data-toggle="tab" href="#tab2">Recommendation</a></li>
+        </ul>
+    </div>
+
+    <section id="first-tab-group" class="tabgroup">
+        <div id="tab1">
+            <div class="row">
+                <form id="property_form" class="form-inline">
+                    <div class="col">
+                        <div class="predict" id="predict">
+                            <label for="interestlabl">Interest Rate</label>
+                            <input type="text" class="form-control" id="interest" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="pidlabl">Property identifier (PID)</label>
+                        <input type="text" class="form-control" id="pid" required>
+                    </div>
+                    <div class="col">
+                        <label>Select Area:</label>
+                        <select class="form-control" id='area' required>
+                            <option value="Downtown">Downtown</option>
+                            <option value="Downtown">Mount Pleasant</option>
+                            <option value="Renfrew-Collingwood">Renfrew-Collingwood</option>
+                            <option value="Kitsilano">Kitsilano</option>
+                            <option value="Killarney">Killarney</option>
+                            <option value="Fairvie">Fairview</option>
+                            <option value="Grandview-Woodland">Grandview-Woodland</option>
+                            <option value="Hastings-Sunrise">Hastings-Sunrise</option>
+                            <option value="West End">West End</option>
+                            <option value="Arbutus-Ridge">Arbutus-Ridge</option>
+                            <option value="Riley Park">Riley Park</option>
+                            <option value="Riley Park">Sunset</option>
+                            <option value="Marpole">Marpole</option>
+                            <option value="Kensington-Cedar Cottage">Kensington-Cedar Cottage</option>
+                            <option value="Kerrisdale">Kerrisdale</option>
+                            <option value="Victoria-Fraserview">Victoria-Fraserview</option>
+                            <option value="Dunbar-Southlands">Dunbar-Southlands</option>
+                            <option value="South Cambie">South Cambie</option>
+                            <option value="West Point Grey">West Point Grey</option>
+                            <option value="Oakridge">Oakridge</option>
+                            <option value="Shaughness">Shaughnessy</option>
+                        </select>
+
+                    </div>
+                    <div class="col"><br><button type="submit" class="btn btn-outline-primary">Submit</button></div>
+                </form>
+            </div>
+            <br>
+            <h5>Predicted Price:</h5> 
+            <p id="message"></p>
+                     
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="line" id="linegraph"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="line" id="usergraph"></div>
+                </div>
+            </div>
+        </div>
+        <div id="tab2">
+            <div class="row">
+                <form id="recommendation_form" class="form-inline">
+                    <div class="col-sm-3">
+                        <label for="pidlabl">Postal Code (first 3 letters)</label>
+                        <input type="text" class="form-control" id="p_value" required>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="bedroom">Bedroom</label>
+                        <input type="text" class="form-control" id="bdrm" required>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="bathroom">Bathroom</label>
+                        <input type="text" class="form-control" id="bthrm" required>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="square-fit">Square Feet</label>
+                        <input type="text" class="form-control" id="sqrft" required>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="fireplaces">Fire Places</label>
+                        <input type="text" class="form-control" id="fire" required>
+                    </div>
+                    <div class="col-sm-3">
+                        <label>Type:</label>
+                        <select class="form-control" id='features' required>
+                            <option value="House">House</option>
+                            <option value="Apt/Condo">Apt/Condo</option>
+                            <option value="Townhouse">Townhouse</option>
+                            <option value="Land/Lot">Land/Lot</option>
+                            <option value="Duplex">Duplex</option>
+                            <option value="Mfd/Mobile Home">Mfd/Mobile Home</option>
+                            <option value="Multifamily">Multifamily</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col">
+                        <br>
+                        <button type="submit" class="btn btn-outline-primary">Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <h5>Recommended Price:</h5> 
+            <p id="message_recommend"></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="map"></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="line" id="table" style="width:100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% include "footer.html" %}
