@@ -1,4 +1,4 @@
-### Coming Soon
+### VANREAPER : Vancouver Real Estate Analysis and Predictions
 
 Introduction:
 
@@ -11,15 +11,14 @@ In addition to that, we have discovered intriguing correlations between the real
 We have scraped data from multiple sources like rental data from craigslist, property tax data from BC Assessment Authority, property listings data from REW, school ratings data from Fraser Institute and historical interest rates from Bank of Canada. In the next step, we performed exploratory data analysis and feature engineering to get the data in proper shape for feeding it into predictive models. Regressions models like Gradient Boosting Trees, Random Forrest, Linear Regression, Ada Boost and Time Series models like ARIMA, LSTMs and Vector Auto Regressor were used to predict future prices of the properties. Property Recommendation System was implemented using k-nearest neighbors algorithm in scikit-learn. Finally all the statistical models were serialized, persisted and deployed using an interactive Flask Web Application.
 
 
+******Original Data is ignored due to confidentiality, Please contact through email*****************
+
 Instructions:
 
-1. git clone git@csil-git1.cs.surrey.sfu.ca:quad_squad/housing_market_analysis.git
-2. go to the directory
-3. open cmd/bash
-4. run 'pip install requirements.txt'
-5. go to the 'deploy' folder
-6. run 'python server.py'
-7. open browser with 'localhost:5000' as url
+1. run 'pip install requirements.txt'
+2. go to the 'deploy' folder
+3. run 'python server.py'
+4. open browser with 'localhost:5000' as url
 
 >Property 
 - Sample Inputs = Interest Rate : 3.5, PID : 017-393-400, Area: Kitsilano
