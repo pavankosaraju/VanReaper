@@ -10,7 +10,7 @@ In addition to that, we have discovered intriguing correlations between the real
 
 We have scraped data from multiple sources like rental data from craigslist, property tax data from BC Assessment Authority, property listings data from REW, school ratings data from Fraser Institute and historical interest rates from Bank of Canada. In the next step, we performed exploratory data analysis and feature engineering to get the data in proper shape for feeding it into predictive models. Regressions models like Gradient Boosting Trees, Random Forrest, Linear Regression, Ada Boost and Time Series models like ARIMA, LSTMs and Vector Auto Regressor were used to predict future prices of the properties. Property Recommendation System was implemented using k-nearest neighbors algorithm in scikit-learn. Finally all the statistical models were serialized, persisted and deployed using an interactive Flask Web Application.
 
-*** *** Original Data is removed due to confidentiality. For any enquireies, please contact through email. Thank you. *** ***
+*** ***Original Data is removed due to confidentiality. For any enquireies, please contact through email. Thank you.*** ***
 
 Instructions:
 
