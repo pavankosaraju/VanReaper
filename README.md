@@ -12,6 +12,8 @@ We have scraped data from multiple sources like rental data from craigslist, pro
 
 More infor in the report - [VanReaper](https://github.com/pavankosaraju/VanReaper/blob/master/VANREAPER%20%E2%80%93%20Vancouver%20Real%20Estate%20Analysis%20and%20Predictions.pdf){target="_blank"}
 
+<a href="https://github.com/pavankosaraju/VanReaper/blob/master/VANREAPER%20%E2%80%93%20Vancouver%20Real%20Estate%20Analysis%20and%20Predictions.pdf" target="_blank">Hello, world!</a>
+
 Project video - [Youtube](https://www.youtube.com/watch?v=ucRwm4dBVGs){target="_blank"}
 
 *** ***Original Data is removed due to confidentiality. For any enquireies, please contact through email. Thank you.*** ***
